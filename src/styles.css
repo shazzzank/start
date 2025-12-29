@@ -1,0 +1,178 @@
+@import 'tailwindcss';
+
+body {
+  @apply bg-gradient-to-br from-gray-100 to-indigo-200;
+}
+
+section {
+  @apply flex flex-col gap-20 px-16 pt-11 pb-14;
+}
+
+h1 {
+  @apply text-4xl font-bold leading-tight mb-4;
+}
+
+h2 {
+  @apply text-2xl font-bold leading-snug my-5;
+}
+
+h3 {
+  @apply text-xl font-bold my-6;
+}
+
+p {
+  @apply text-lg leading-relaxed my-4;
+}
+
+header {
+  @apply flex justify-between items-center mx-16 px-8 py-2 sticky top-5 z-10 rounded-3xl;
+
+  span {
+    @apply font-bold text-xl text-red-700;
+    font-family: 'Lobster', cursive;
+  }
+
+  div {
+    @apply flex gap-4;
+  }
+
+  svg {
+    @apply h-5 w-5 text-gray-700;
+  }
+}
+
+.glass {
+  @apply bg-white/60 shadow backdrop-blur-md;
+}
+
+.link {
+  @apply underline underline-offset-8 transition-transform duration-200 hover:scale-110;
+}
+
+.banner {
+  @apply items-center justify-between h-[80vh] p-4 rounded-3xl;
+
+  button {
+    @apply p-2 h-fit rounded-full cursor-pointer hover:scale-110;
+
+    svg {
+      @apply h-5 w-5;
+    }
+  }
+}
+
+.cards {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-4;
+}
+
+.card {
+  @apply relative flex flex-col h-[25rem] rounded-3xl shadow-sm bg-center bg-cover bg-no-repeat overflow-hidden;
+
+  .image {
+    @apply w-full;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .info {
+    @apply flex flex-col gap-2 p-5;
+
+    :where(h2, h3, p) {
+      @apply m-0;
+    }
+  }
+
+  .footer {
+    @apply flex justify-between items-center;
+  }
+
+  &.full {
+    @apply text-white;
+
+    .info {
+      @apply text-center justify-end items-center h-full;
+    }
+  }
+
+  &.basic {
+    @apply bg-white;
+
+    .image {
+      @apply h-1/2;
+    }
+
+    .info {
+      @apply justify-between h-1/2;
+    }
+  }
+}
+
+.hero {
+  @apply flex justify-between items-center w-full rounded-3xl bg-white overflow-hidden;
+
+  a {
+    @apply inline-block;
+  }
+
+  div {
+    @apply p-10;
+  }
+}
+
+.newsletter {
+  @apply flex flex-col gap-4 justify-center items-center h-[20rem] rounded-3xl bg-white;
+
+  .wrapper {
+    @apply flex flex-col gap-8 items-center;
+
+    h3 {
+      @apply text-3xl m-0;
+    }
+
+    p {
+      @apply w-[60%] text-center m-0;
+    }
+
+    .input {
+      @apply border border-gray-300 rounded-3xl overflow-hidden;
+
+      &:focus-within {
+        @apply border-blue-500
+      }
+
+      button {
+        @apply py-2 px-7 text-gray-700 bg-gray-200 hover:scale-105;
+      }
+
+      input {
+        @apply py-2 px-7 text-gray-500 placeholder-gray-300;
+      }
+    }
+  }
+}
+
+.footer-container {
+  @apply flex flex-col gap-10 mx-16 mt-11 pt-10 px-10 text-center bg-white rounded-t-3xl;
+
+  footer {
+    @apply flex justify-between;
+
+    h4 {
+      @apply font-bold text-lg mb-5;
+    }
+
+    .links {
+      @apply flex flex-col opacity-40;
+
+      .link {
+        @apply py-2 text-sm;
+      }
+    }
+  }
+
+  p {
+    @apply text-sm text-gray-500;
+  }
+}
