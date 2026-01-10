@@ -1,5 +1,6 @@
 #header-container {
   position: sticky;
+  top: var(--space-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,15 +8,15 @@
   padding: var(--space-xs) var(--space-md);
   font-family: var(--font-title);
   border-radius: var(--space-md);
-  background: var(--background);
-  box-shadow: var(--box-shadow);
-  backdrop-filter: blur(18px) saturate(160%);
+  background: var(--glass-background);
+  box-shadow: var(--glass-box-shadow);
+  backdrop-filter: var(--glass-backdrop-filter);
 }
 
 #header-title {
+  margin: 0;
   font-size: var(--space-md);
   color: var(--color-accent);
-  margin: 0;
 }
 
 #header-items {

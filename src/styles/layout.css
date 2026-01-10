@@ -5,15 +5,41 @@
   --color-secondary: #F3F4F6;
   --color-tertiary: #C7D2FE;
   --color-accent: #B91C1C;
+  --banner-bg-one: #FEE2E2;
+  --banner-color-one: #FCA5A5;
+  --banner-bg-two: #DBEAFE;
+  --banner-color-two: #93C5FD;
+  --banner-bg-three: #DCFCE7;
+  --banner-color-three: #86EFAC;
   --gradient: linear-gradient(to bottom right, var(--color-secondary), var(--color-tertiary));
-  --background: rgba(255, 255, 255, 0.6);
-  --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --glass-background: rgba(255, 255, 255, 0.6);
+  --glass-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --glass-backdrop-filter: blur(18px) saturate(160%);
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 2.5rem;
   --space-xxl: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #E5E7EB;
+    --color-secondary: #0F172A;
+    --color-tertiary: #1E293B;
+    --color-accent: #EF4444;
+    --banner-bg-one: #450a0a;
+    --banner-color-one: #ef4444;
+    --banner-bg-two: #0c4a6e;
+    --banner-color-two: #3b82f6;
+    --banner-bg-three: #14532d;
+    --banner-color-three: #22c55e;
+    --gradient: linear-gradient(to bottom right, #020617, #1E293B);
+    --glass-background: rgba(15, 23, 42, 0.6);
+    --glass-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    --glass-backdrop-filter: blur(18px) saturate(140%);
+  }
 }
 
 body {
@@ -31,28 +57,28 @@ body {
 }
 
 #page-title {
+  margin: 0 0 var(--space-sm);
   font-family: var(--font-title);
   font-size: var(--space-md);
   font-weight: bold;
   line-height: 1.2;
-  margin: 0 0 var(--space-sm);
 }
 
 #page-heading {
+  margin: var(--space-sm) 0;
   font-size: var(--space-sm);
   font-weight: 700;
   line-height: 1.15;
-  margin: var(--space-sm) 0;
 }
 
 #page-subheading {
+  margin: var(--space-sm) 0;
   font-size: var(--space-sm);
   font-weight: 700;
-  margin: var(--space-sm) 0;
 }
 
 #page-text {
+  margin: var(--space-sm) 0;
   font-size: var(--space-sm);
   line-height: 1.65;
-  margin: var(--space-sm) 0;
 }

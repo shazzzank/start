@@ -1,0 +1,19 @@
+#banner-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  padding: var(--space-md);
+  border-radius: var(--space-md);
+}
+
+#banner-toggle-left,
+#banner-toggle-right {
+  padding: var(--space-sm);
+  border-radius: var(--space-md);
+  cursor: pointer;
+  background: var(--glass-background);
+  box-shadow: var(--glass-box-shadow);
+  backdrop-filter: var(--glass-backdrop-filter);
+  border: none;
+}

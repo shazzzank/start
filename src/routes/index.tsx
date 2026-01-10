@@ -1,14 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router"
+import Banner from "@/components/banner"
+import Cards from "@/components/cards"
+import { categories } from "@/data/categories"
+import { products } from "@/data/products"
 
 export const Route = createFileRoute('/')({
   component: () => (
     <section id="page-container">
-      <div>
-        <h1 id="page-title">Home Page</h1>
-        <h2 id="page-heading">Title</h2>
-        <p id="page-text">Hello world</p>
-        <input name="test" placeholder="test" />
-      </div>
+      <Banner />
+      <Cards data={categories} />
+      <Cards data={products} />
     </section>
   ),
 })
