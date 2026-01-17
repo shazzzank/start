@@ -4,8 +4,10 @@ import { Link } from "@tanstack/react-router";
 export default function Cards(props: { data: CardType[] }) {
   return (
     <div className="cards">
-      {props.data.map(item =>
-        <Card {...item} />
+      {props.data.map((item, idx) =>
+        <div key={idx}>
+          <Card {...item} />
+        </div>
       )}
     </div>
   );

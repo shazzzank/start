@@ -50,7 +50,7 @@ export const products: CardType[] = [
     text: "Formal",
     subheading: "$59.9",
     button: { name: "Add", href: "/" },
-    image: "https://placehold.co/300x200"
+    image: "/products/4.jpg"
   },
   {
     type: "basic",
@@ -59,7 +59,7 @@ export const products: CardType[] = [
     text: "Skateboarding",
     subheading: "$19.9",
     button: { name: "Add", href: "/" },
-    image: "https://placehold.co/300x200"
+    image: "/products/3.jpg"
   },
   {
     type: "basic",
@@ -68,7 +68,7 @@ export const products: CardType[] = [
     text: "Formal",
     subheading: "$79.9",
     button: { name: "Add", href: "/" },
-    image: "https://placehold.co/300x200"
+    image: "/products/2.jpg"
   },
   {
     type: "basic",
@@ -77,7 +77,7 @@ export const products: CardType[] = [
     text: "Casual",
     subheading: "$29.9",
     button: { name: "Add", href: "/" },
-    image: "https://placehold.co/300x200"
+    image: "/products/1.jpg"
   },
 ];
 
@@ -86,25 +86,25 @@ export const collections: CardType[] = [
     type: "full",
     heading: "Summer Essentials",
     text: "Light, breathable pieces for warm weather",
-    bg: "https://placehold.co/300x400"
+    bg: "/products/8.jpg"
   },
   {
     type: "full",
     heading: "Workwear",
     text: "Professional attire for the modern workplace",
-    bg: "https://placehold.co/300x400"
+    bg: "/products/7.jpg"
   },
   {
     type: "full",
     heading: "Loungewear",
     text: "Comfortable styles for home and relaxation",
-    bg: "https://placehold.co/300x400"
+    bg: "/products/6.jpg"
   },
   {
     type: "full",
     heading: "Activewear",
     text: "Everyday activewear for any workout, any pace.",
-    bg: "https://placehold.co/300x400"
+    bg: "/products/5.jpg"
   }
 ];
 

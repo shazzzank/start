@@ -6,7 +6,9 @@ export default function Header() {
     <header className="glass">
       <span>{seo.find(item => item.name === 'brandName')?.value}</span>
       <div>
-        {menu.map((item, idx) => <Link to={item.href} key={idx}>{item.icon}</Link>)}
+        {menu.map((item, idx) =>
+          <Link to={item.href} key={idx}>{item.icon}</Link>
+        )}
       </div>
     </header>
   );
